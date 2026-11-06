@@ -1,0 +1,249 @@
+{
+  "Name": "Teams Control",
+  "Version": "1.0.0",
+  "Author": "psi70y",
+  "Description": "Control Microsoft Teams meetings from AJAZZ Stream Dock and Elgato Stream Deck. Unofficial; not affiliated with Microsoft or Elgato.",
+  "URL": "https://github.com/psi70y/streamdock-teams-control",
+  "UUID": "com.psi70y.teamscontrol",
+  "SDKVersion": 2,
+  "Category": "Teams Control",
+  "CategoryIcon": "icons/plugin/Category",
+  "Icon": "icons/plugin/Plugin",
+  "CodePath": "bin/plugin.js",
+  "CodePathMac": "bin/launch.sh",
+  "CodePathWin": "bin/plugin.js",
+  "Nodejs": {
+    "Version": "20"
+  },
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.15"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Software": {
+    "MinimumVersion": "6.4"
+  },
+  "Actions": [
+    {
+      "UUID": "com.psi70y.teamscontrol.mute",
+      "Name": "Mute",
+      "Icon": "icons/list/Mute",
+      "Tooltip": "Mute or unmute your microphone",
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "icons/mute/Unmuted"
+        }
+      ]
+    },
+    {
+      "UUID": "com.psi70y.teamscontrol.camera",
+      "Name": "Camera",
+      "Icon": "icons/list/Camera",
+      "Tooltip": "Turn your camera on or off",
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "icons/camera/Off"
+        }
+      ]
+    },
+    {
+      "UUID": "com.psi70y.teamscontrol.hand",
+      "Name": "Raise hand",
+      "Icon": "icons/list/Hand",
+      "Tooltip": "Raise or lower your hand",
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "icons/hand/Down"
+        }
+      ]
+    },
+    {
+      "UUID": "com.psi70y.teamscontrol.blur",
+      "Name": "Background blur",
+      "Icon": "icons/list/Blur",
+      "Tooltip": "Turn background blur on or off",
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "icons/blur/Off"
+        }
+      ]
+    },
+    {
+      "UUID": "com.psi70y.teamscontrol.leave",
+      "Name": "Leave",
+      "Icon": "icons/list/Leave",
+      "Tooltip": "Leave the meeting",
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "icons/leave/Leave"
+        }
+      ]
+    },
+    {
+      "UUID": "com.psi70y.teamscontrol.applause",
+      "Name": "React: Applause",
+      "Icon": "icons/list/Applause",
+      "Tooltip": "Send an applause reaction",
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "icons/react/Applause"
+        }
+      ]
+    },
+    {
+      "UUID": "com.psi70y.teamscontrol.laugh",
+      "Name": "React: Laugh",
+      "Icon": "icons/list/Laugh",
+      "Tooltip": "Send a laugh reaction",
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "icons/react/Laugh"
+        }
+      ]
+    },
+    {
+      "UUID": "com.psi70y.teamscontrol.like",
+      "Name": "React: Like",
+      "Icon": "icons/list/Like",
+      "Tooltip": "Send a like reaction",
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "icons/react/Like"
+        }
+      ]
+    },
+    {
+      "UUID": "com.psi70y.teamscontrol.love",
+      "Name": "React: Love",
+      "Icon": "icons/list/Love",
+      "Tooltip": "Send a love reaction",
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "icons/react/Love"
+        }
+      ]
+    },
+    {
+      "UUID": "com.psi70y.teamscontrol.wow",
+      "Name": "React: Wow",
+      "Icon": "icons/list/Wow",
+      "Tooltip": "Send a wow reaction",
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "icons/react/Wow"
+        }
+      ]
+    },
+    {
+      "UUID": "com.psi70y.teamscontrol.chat",
+      "Name": "Chat",
+      "Icon": "icons/list/Chat",
+      "Tooltip": "Open or close the meeting chat",
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "icons/chat/Chat"
+        }
+      ]
+    },
+    {
+      "UUID": "com.psi70y.teamscontrol.sharetray",
+      "Name": "Share screen",
+      "Icon": "icons/list/ShareTray",
+      "Tooltip": "Open the screen share tray",
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "icons/share/Tray"
+        }
+      ]
+    },
+    {
+      "UUID": "com.psi70y.teamscontrol.stopsharing",
+      "Name": "Stop sharing",
+      "Icon": "icons/list/StopSharing",
+      "Tooltip": "Stop sharing your screen",
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "icons/share/Stop"
+        }
+      ]
+    },
+    {
+      "UUID": "com.psi70y.teamscontrol.pushtotalk",
+      "Name": "Push to talk",
+      "Icon": "icons/list/PushToTalk",
+      "Tooltip": "Hold to unmute; release to mute again",
+      "SupportedInMultiActions": false,
+      "States": [
+        {
+          "Image": "icons/ptt/Idle"
+        }
+      ]
+    },
+    {
+      "UUID": "com.psi70y.teamscontrol.pushtomute",
+      "Name": "Push to mute",
+      "Icon": "icons/list/PushToMute",
+      "Tooltip": "Hold to mute; release to unmute again",
+      "SupportedInMultiActions": false,
+      "States": [
+        {
+          "Image": "icons/ptm/Idle"
+        }
+      ]
+    },
+    {
+      "UUID": "com.psi70y.teamscontrol.privacy",
+      "Name": "Privacy",
+      "Icon": "icons/list/Privacy",
+      "Tooltip": "Mute and turn your camera off in one press",
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "icons/privacy/Privacy"
+        }
+      ]
+    },
+    {
+      "UUID": "com.psi70y.teamscontrol.holdtoleave",
+      "Name": "Hold to leave",
+      "Icon": "icons/list/HoldToLeave",
+      "Tooltip": "Hold for about a second to leave the meeting",
+      "SupportedInMultiActions": false,
+      "States": [
+        {
+          "Image": "icons/holdleave/Idle"
+        }
+      ]
+    },
+    {
+      "UUID": "com.psi70y.teamscontrol.status",
+      "Name": "Meeting status",
+      "Icon": "icons/list/Status",
+      "Tooltip": "Shows meeting, recording and unread-chat status; press to bring Teams forward",
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "icons/status/Offline"
+        }
+      ]
+    }
+  ]
+}
